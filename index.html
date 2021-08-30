@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div class="blockrasch">
+		<p>Радиус основания</p>
+		<input type="text" placeholder="Радиус основания" id="OsnR">
+		<p>Отношение R/r</p>
+		<input type="text" placeholder="Отношение R/r" id="Rr">
+		<p>Радиус платформы</p>
+		<input type="text" placeholder="Радиус платформы" id="Plat_r">
+		<p>Sh</p>
+		<input type="text" placeholder="Sh" id="Sh">
+		<p>D</p>
+		<input type="text" placeholder="D" id="D">
+		<p>V</p>
+		<input type="text" placeholder="V" id="V">
+		<p>Колличество штанг</p>
+		<input type="text" placeholder="Колличество штанг" id="CountHtang">
+		<p>Колличество точек</p>
+		<input type="text" placeholder="Колличество точек" id="CountPoint">
+		<p>Угол расхождения</p>
+		<input type="text" placeholder="Угол расхождения" id="anglRash">
+		<p>Угол Х</p>
+		<input type="text" placeholder="Угол Х" id="anglPlatX">
+		<p>Угол У</p>
+		<input type="text" placeholder="Угол У" id="anglPlatY">
+		<p>Угол Z</p>
+		<input type="text" placeholder="Угол Z" id="anglPlatZ">
+		<button onclick="raschet_dlin_shtang()">Расчитать длину штанг</button>
+		<div class="result">
+			<p>rastMezhO_P</p>
+			<input type="text" id="rastMezhO_P">
+			<p>lmax</p>
+			<input type="text" id="lmax">
+			<p>lmin</p>
+			<input type="text" id="lmin">
+		</div>
+	</div>
+	
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
