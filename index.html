@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>MPS</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<div class="blockrasch">
@@ -31,15 +32,45 @@
 		<input type="text" placeholder="Угол У" id="anglPlatY">
 		<p>Угол Z</p>
 		<input type="text" placeholder="Угол Z" id="anglPlatZ">
-		<button onclick="raschet_dlin_shtang()">Расчитать длину штанг</button>
-		<div class="result">
-			<p>rastMezhO_P</p>
-			<input type="text" id="rastMezhO_P">
-			<p>lmax</p>
-			<input type="text" id="lmax">
-			<p>lmin</p>
-			<input type="text" id="lmin">
+		<div class="alfOP">
+			<div>
+				<p>Угол на основании 1</p>
+				<input type="text" id="alfO1" placeholder="Угол на основании 1">
+				<p>Угол на основании 2</p>
+				<input type="text" id="alfO2" placeholder="Угол на основании 2">
+				<p>Угол на основании 3</p>
+				<input type="text" id="alfO3" placeholder="Угол на основании 3">
+				<p>Угол на основании 4</p>
+				<input type="text" id="alfO4" placeholder="Угол на основании 4">
+				<p>Угол на основании 5</p>
+				<input type="text" id="alfO5" placeholder="Угол на основании 5">
+				<p>Угол на основании 6</p>
+				<input type="text" id="alfO6" placeholder="Угол на основании 6">
+			</div>
+			<div>
+				<p>Угол на платфоре 1</p>
+				<input type="text" id="alfP1" placeholder="Угол на платфоре 1">
+				<p>Угол на платфоре 2</p>
+				<input type="text" id="alfP2" placeholder="Угол на платфоре 2">
+				<p>Угол на платфоре 3</p>
+				<input type="text" id="alfP3" placeholder="Угол на платфоре 3">
+				<p>Угол на платфоре 4</p>
+				<input type="text" id="alfP4" placeholder="Угол на платфоре 4">
+				<p>Угол на платфоре 5</p>
+				<input type="text" id="alfP5" placeholder="Угол на платфоре 5">
+				<p>Угол на платфоре 6</p>
+				<input type="text" id="alfP6" placeholder="Угол на платфоре 6">
+			</div>
 		</div>
+		<button onclick="raschet_dlin_shtang()">Расчитать длину штанг</button>
+	</div>
+	<div class="result">
+		<p>rastMezhO_P</p>
+		<input type="text" id="rastMezhO_P">
+		<p>lmax</p>
+		<input type="text" id="lmax">
+		<p>lmin</p>
+		<input type="text" id="lmin">
 	</div>
 	
 

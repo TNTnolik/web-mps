@@ -19,6 +19,8 @@ var anglPlatY	= 0;
 var anglPlatZ	= 0;
 
 var k 			= [[],[],[],[]];
+var alfO        = [];
+var alfP        = [];
 var alf 		= [[0,0,0,0,0,0],[0,0,0,0,0,0]];
 
 
@@ -39,6 +41,19 @@ function raschet_dlin_shtang() {
     anglPlatY   = parseInt($("#anglPlatY").val(),10);
     anglPlatZ   = parseInt($("#anglPlatZ").val(),10);
 
+    for (var j = 0; j < alf[0].length; j++) {
+        if(parseInt($("#alfO"+(j+1)).val(),10)!=0){
+            alf[0][j]=parseInt($("#alfO"+(j+1)).val(),10)*Math.PI/180;
+        } else {
+            alf[0][j]=0;
+        }
+        if(parseInt($("#alfP"+(j+1)).val(),10)!=0){
+            alf[1][j]=parseInt($("#alfP"+(j+1)).val(),10)*Math.PI/180;
+        } else {
+            alf[1][j]=0;
+        }
+        
+    }
 
 
 
@@ -125,4 +140,13 @@ $(document).ready(function(){
     $("#anglPlatX").val(anglPlatX);
     $("#anglPlatY").val(anglPlatY);
     $("#anglPlatZ").val(anglPlatZ);
+
+    for (var i = 1; i <= 6; i++) {
+        $("#alfO"+i).val(0);
+        $("#alfP"+i).val(0);
+    }
+    for (var i = 0; i < CountHtang; i++) {
+        $("#alfO"+(i+1)).val(360/CountHtang*i);
+        $("#alfP"+(i+1)).val(360/CountHtang*i);
+    }
 });
